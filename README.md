@@ -1,17 +1,24 @@
 # CHAT DE CONVERSAS EM TXT
-🤤É UM BOT DO TELEGRAM DE BATE PAPO SOBRE TÓPICOS RELACIONADOS; QUE SALVA AS CONVERSAS EM "CONVERSAS.TXT"!
+🤤É UM BOT DO TELEGRAM DE BATE PAPO SOBRE TÓPICOS RELACIONADOS, QUE SALVA AS CONVERSAS EM "CONVERSAS.TXT"!
 
-<img src="./IMAGENS/FOTO_1.png" align="center" width="400"> <br>
-<img src="./IMAGENS/FOTO_2.png" align="center" width="400"> <br>
+<img src="./IMAGENS/FOTO_01.png" align="center" width="400"> <br>
+<img src="./IMAGENS/FOTO_02.png" align="center" width="400"> <br>
 
 ## DESCRIÇÃO:
-O bot recebe mensagens de texto dos usuários e responde com informações relacionadas aos tópicos especificados e as salva em `CONVERSAS.txt`.
+Este bot do Telegram é projetado para responder a mensagens enviadas pelos usuários com base em palavras-chave predefinidas. Ele armazena as conversas em um arquivo de texto e permite que os usuários personalizem as respostas sem alterar o código principal.
 
 ## FUNCIONALIDADES:
-1. **Respostas Automáticas:** O bot responde a mensagens enviadas pelos usuários no Telegram.
-2. **Identificação de Palavras-Chave:** Reconhece palavras-chave como "gosta de ciência", "tecnologia", "filosofia", "teologia" e outras para fornecer respostas específicas sobre esses temas.
-3. **Mensagem de Início:** Ao receber "/start", "oi" ou "ola", o bot dá uma mensagem de boas-vindas e apresenta suas áreas de interesse.
-4. **Salvamento de Conversas:** Todas as interações entre o usuário e o bot são salvas em um arquivo chamado "CONVERSAS.txt", localizado no mesmo diretório do script.
+1. **Resposta Automática:**
+   - O bot responde automaticamente a mensagens com base em palavras-chave definidas em um arquivo separado (`RESPOSTAS.py`).
+
+2. **Registro de Conversas:**
+   - O bot salva cada interação em um arquivo de texto (`CONVERSAS.txt`), registrando o nome do usuário, ID, mensagem enviada e resposta do bot.
+
+3. **Personalização de Respostas:**
+   - As respostas são definidas em um arquivo (`RESPOSTAS.py`), permitindo fácil personalização das palavras-chave e respostas.
+
+4. **Verificação Contínua:**
+   - O bot verifica continuamente novas mensagens usando a API de bots do Telegram.
 
 ## EXECUTANDO O PROJETO:
 1. **Coloque o Token:**
@@ -31,14 +38,11 @@ O bot recebe mensagens de texto dos usuários e responde com informações relac
    
    - Inicie o bot enviando o comando `/start`. Receba uma mensagem de boas-vindas e Converse.
 
-4. **Interagir com o Bot:**
-   - Envie mensagens como "gosta de ciência?", "filosofia", "tecnologia", entre outras relacionadas aos interesses do bot.
-   - O bot responderá automaticamente com informações sobre esses temas ou com uma mensagem padrão caso não reconheça a mensagem.
+4. **Personalização de Respostas:**
+   - Edite `RESPOSTAS.py` para adicionar ou modificar as palavras-chave e as respostas conforme necessário.
 
-5. **Comandos Disponíveis:**
-   - `/start`, `oi`, `ola`: Inicia uma conversa com o bot e recebe uma mensagem de boas-vindas.
-   - Mensagens contendo palavras-chave como "gosta de ciência", "tecnologia", "filosofia", "teologia": Ativa respostas específicas sobre esses assuntos.
-   - Outras mensagens: Recebem uma resposta padrão indicando que o bot não compreendeu a mensagem.
+5. **Interação com o Bot:**
+   - Envie mensagens ao bot no Telegram e ele responderá com base nas palavras-chave definidas, registrando todas as conversas no arquivo `CONVERSAS.txt`.
 
 6. **Visualizar Conversas Salvas:**
    - Todas as interações entre usuários e o bot são registradas no arquivo "CONVERSAS.txt" no mesmo diretório do script.
